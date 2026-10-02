@@ -79,24 +79,24 @@ const Hero = () => {
           </p>
 
           {/* Action Buttons */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
-            <a
-             href="https://drive.google.com/uc?export=download&id=1Aneo4IGP4pW3q-ga9HFFj2QrhzCxDrIN"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center gap-2 rounded-xl border border-cyan-400 bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950 shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all duration-300 hover:border-cyan-500/30 hover:bg-slate-900 hover:text-white hover:shadow-md cursor-pointer"
-            >
-              <span>Download CV</span>
-              <FaDownload className="transition-transform duration-300 group-hover:translate-y-0.5" size={13} />
-            </a>
-            
-            <a
-              href="#contact"
-              className="rounded-xl border border-slate-800 bg-slate-900/60 px-6 py-3 text-sm font-semibold text-slate-300 backdrop-blur-sm transition-all hover:border-cyan-500/40 hover:text-white"
-            >
-              Contact Me
-            </a>
-          </div>
+         <div className="mt-8 flex items-center justify-center gap-4 lg:justify-start">
+  <a
+    href="https://drive.google.com/uc?export=download&id=1Aneo4IGP4pW3q-ga9HFFj2QrhzCxDrIN"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group flex h-11 w-40 items-center justify-center gap-2 rounded-xl border border-cyan-400 bg-cyan-500 text-sm font-semibold text-slate-950 shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all duration-300 hover:border-cyan-500/30 hover:bg-slate-900 hover:text-white hover:shadow-md cursor-pointer"
+  >
+    <span>Download CV</span>
+    <FaDownload className="transition-transform duration-300 group-hover:translate-y-0.5" size={13} />
+  </a>
+  
+  <a
+    href="#contact"
+    className="flex h-11 w-40 items-center justify-center rounded-xl border border-slate-800 bg-slate-900/60 text-sm font-semibold text-slate-300 backdrop-blur-sm transition-all hover:border-cyan-500/40 hover:text-white"
+  >
+    Contact Me
+  </a>
+</div>
         </motion.div>
 
       </div>
