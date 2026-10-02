@@ -71,10 +71,10 @@ const Navbar = () => {
         >
           <div className="relative flex h-12 w-12 items-center justify-center rounded-xl border-2 border-sky-400/60 bg-slate-900/40 text-blue-500 shadow-[0_0_15px_rgba(56,189,248,0.15)] backdrop-blur-md transition-all duration-300 group-hover:border-sky-400 group-hover:bg-sky-400 group-hover:shadow-[0_0_25px_rgba(56,189,248,0.5)]">
             <div className="flex items-center justify-center font-black tracking-normal text-lg select-none">
-              <span className="text-blue-500 transition-colors duration-300 group-hover:text-slate-950">
+              <span className="text-blue-400 transition-colors duration-300 group-hover:text-slate-950">
                 S
               </span>
-              <span className="text-blue-500 transition-colors duration-300 group-hover:text-slate-950">
+              <span className="text-blue-400 transition-colors duration-300 group-hover:text-slate-950">
                 M
               </span>
             </div>

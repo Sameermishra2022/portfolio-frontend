@@ -34,18 +34,11 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="relative mx-auto flex h-[310px] w-full max-w-xl items-center justify-center sm:h-[370px] lg:order-2 lg:h-[500px]"
         >
-          {/* Dark Backlight Glow */}
-          <div className="absolute h-[240px] w-[240px] sm:h-[310px] sm:w-[310px] lg:h-[380px] lg:w-[380px] rounded-full bg-cyan-500/20 blur-3xl animate-pulse"></div>
+          {/* Inner Circle Soft Glow Effect */}
+          <div className="pointer-events-none absolute h-[240px] w-[240px] sm:h-[310px] sm:w-[310px] lg:h-[370px] lg:w-[370px] rounded-full bg-cyan-500/25 blur-3xl animate-pulse [animation-duration:4s]"></div>
 
-          {/* Outer Rotating Circle with Dot (Anti-Clockwise) */}
-          <div className="absolute h-[280px] w-[280px] sm:h-[350px] sm:w-[350px] lg:h-[420px] lg:w-[420px] animate-[spin_22s_linear_infinite_reverse] rounded-full border border-dashed border-cyan-500/25">
-            <span className="absolute -left-[7px] top-1/2 h-3.5 w-3.5 -translate-y-1/2 rounded-full border-2 border-slate-950 bg-cyan-400 shadow-[0_0_12px_#22d3ee]"></span>
-          </div>
-
-          {/* Inner Rotating Circle with Glow Accent (Clockwise) */}
-          <div className="absolute h-[250px] w-[250px] sm:h-[320px] sm:w-[320px] lg:h-[385px] lg:w-[385px] animate-[spin_18s_linear_infinite] rounded-full border border-cyan-500/40 shadow-[0_0_20px_rgba(34,211,238,0.2)]">
-            <span className="absolute -right-[7px] top-1/2 h-3.5 w-3.5 -translate-y-1/2 rounded-full border-2 border-slate-950 bg-cyan-400 shadow-[0_0_12px_#22d3ee]"></span>
-          </div>
+          {/* Inner Rotating Solid Circle (Low Opacity - 14s) */}
+          <div className="absolute h-[250px] w-[250px] sm:h-[320px] sm:w-[320px] lg:h-[385px] lg:w-[385px] animate-[spin_14s_linear_infinite] rounded-full border border-cyan-500/30 shadow-[0_0_20px_rgba(34,211,238,0.15)]"></div>
 
           {/* Profile Image Container */}
           <div className="relative h-[220px] w-[220px] sm:h-[290px] sm:w-[290px] lg:h-[350px] lg:w-[350px] overflow-hidden rounded-full border-4 border-cyan-400/80 bg-slate-900 p-1 shadow-2xl shadow-cyan-500/30">
@@ -88,8 +81,9 @@ const Hero = () => {
           {/* Action Buttons */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
             <a
-              href="/resume.pdf"
-              download="Sameer_Mishra_Resume.pdf"
+             href="https://drive.google.com/uc?export=download&id=1Aneo4IGP4pW3q-ga9HFFj2QrhzCxDrIN"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center gap-2 rounded-xl border border-cyan-400 bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950 shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all duration-300 hover:border-cyan-500/30 hover:bg-slate-900 hover:text-white hover:shadow-md cursor-pointer"
             >
               <span>Download CV</span>

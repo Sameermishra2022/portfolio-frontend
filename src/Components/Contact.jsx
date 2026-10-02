@@ -39,7 +39,7 @@ const Contact = () => {
       const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json", 
         },
         body: JSON.stringify(formData),
       });
@@ -63,13 +63,13 @@ const Contact = () => {
       } else {
         setStatusMessage({
           type: "error",
-          text: data.message || "Data save nahi ho paya!",
+          text: data.message || "Failed to save data.",
         });
       }
     } catch (error) {
       setStatusMessage({
         type: "error",
-        text: "Server connect nahi ho pa raha!",
+        text: "Server unreachable.",
       });
     } finally {
       setLoading(false);
@@ -147,7 +147,7 @@ const Contact = () => {
               </span>
               <div className="flex items-center gap-3 flex-wrap">
                 <a
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/8292841419"
                   target="_blank"
                   rel="noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-800 bg-slate-950 text-slate-400 hover:border-2 hover:border-emerald-500 hover:text-emerald-400 transition-all cursor-pointer"
@@ -155,7 +155,7 @@ const Contact = () => {
                   <FaWhatsapp size={18} />
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Sameermishra2022"
                   target="_blank"
                   rel="noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-800 bg-slate-950 text-slate-400 hover:border-2 hover:border-cyan-400 hover:text-cyan-400 transition-all cursor-pointer"
@@ -163,7 +163,7 @@ const Contact = () => {
                   <FaGithub size={18} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/sameer-mishra-2aa12a254/"
                   target="_blank"
                   rel="noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-800 bg-slate-950 text-slate-400 hover:border-2 hover:border-cyan-400 hover:text-cyan-400 transition-all cursor-pointer"
