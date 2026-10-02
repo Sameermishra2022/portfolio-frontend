@@ -10,7 +10,7 @@ import Footer from './Components/Footer'
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px]">
+    <div className="relative w-full min-h-screen bg-slate-950 text-slate-100 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] overflow-x-hidden">
       
       {/* Background Ambient Glows (Absolute Positioned - No Fixed Blur Glitch) */}
       <div className="pointer-events-none absolute -left-40 top-32 h-[500px] w-[500px] rounded-full bg-cyan-500/10 blur-[140px] z-0" />
@@ -18,7 +18,7 @@ const App = () => {
       <div className="pointer-events-none absolute left-1/4 top-[70%] h-[400px] w-[400px] rounded-full bg-cyan-400/10 blur-[130px] z-0" />
 
       {/* Main Page Components */}
-      <div className="relative z-10">
+      <div className="relative z-10 w-full overflow-x-hidden">
         <Navbar />
         <Hero />
         <About />
