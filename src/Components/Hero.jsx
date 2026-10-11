@@ -11,7 +11,7 @@ const Hero = () => {
 
       <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-8 lg:grid lg:grid-cols-2 lg:items-center">
 
-        {/* Badge - Mobile/Tablet View (Top-most & Centered) */}
+        {/* Badge - Mobile/Tablet View */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* Profile Section - Mobile/Tablet Compact Heights & Sizing */}
+        {/* Profile Section */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -37,16 +37,23 @@ const Hero = () => {
           {/* Inner Circle Soft Glow Effect */}
           <div className="pointer-events-none absolute h-[240px] w-[240px] sm:h-[310px] sm:w-[310px] lg:h-[370px] lg:w-[370px] rounded-full bg-cyan-500/25 blur-3xl animate-pulse [animation-duration:4s]"></div>
 
-          {/* Inner Rotating Solid Circle (Low Opacity - 14s) */}
+          {/* Bahar Wala Outer Border (Original Cyan Ring - Unchanged) */}
           <div className="absolute h-[250px] w-[250px] sm:h-[320px] sm:w-[320px] lg:h-[385px] lg:w-[385px] animate-[spin_14s_linear_infinite] rounded-full border border-cyan-500/30 shadow-[0_0_20px_rgba(34,211,238,0.15)]"></div>
 
-          {/* Profile Image Container */}
-          <div className="relative h-[220px] w-[220px] sm:h-[290px] sm:w-[290px] lg:h-[350px] lg:w-[350px] overflow-hidden rounded-full border-4 border-cyan-400/80 bg-slate-900 p-1 shadow-2xl shadow-cyan-500/30">
-            <img
-              src={sameer}
-              alt="Sameer Mishra"
-              className="h-full w-full rounded-full object-cover object-[50%_38%] brightness-[0.95] contrast-[1.05]"
-            />
+          {/* Inner Border Frame (Rotating Green, Blue, Orange, Purple, Cyan Gradient) */}
+          <div className="relative h-[220px] w-[220px] sm:h-[290px] sm:w-[290px] lg:h-[350px] lg:w-[350px] rounded-full p-[3px] overflow-hidden shadow-2xl shadow-cyan-500/20">
+            
+            {/* Continuous Rotating 5-Color Gradient Background */}
+            <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 via-blue-500 via-amber-500 via-purple-600 via-cyan-400 to-emerald-400 animate-[spin_6s_linear_infinite]"></div>
+            
+            {/* Static Image Frame (Image rotated nahi hogi) */}
+            <div className="absolute inset-[3px] rounded-full bg-slate-900 overflow-hidden p-1">
+              <img
+                src={sameer}
+                alt="Sameer Mishra"
+                className="h-full w-full rounded-full object-cover object-[50%_38%] brightness-[0.95] contrast-[1.05]"
+              />
+            </div>
           </div>
         </motion.div>
 
@@ -79,24 +86,24 @@ const Hero = () => {
           </p>
 
           {/* Action Buttons */}
-         <div className="mt-8 flex items-center justify-center gap-4 lg:justify-start">
-  <a
-    href="https://drive.google.com/uc?export=download&id=1Aneo4IGP4pW3q-ga9HFFj2QrhzCxDrIN"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="group flex h-11 w-40 items-center justify-center gap-2 rounded-xl border border-cyan-400 bg-cyan-500 text-sm font-semibold text-slate-950 shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all duration-300 hover:border-cyan-500/30 hover:bg-slate-900 hover:text-white hover:shadow-md cursor-pointer"
-  >
-    <span>Download CV</span>
-    <FaDownload className="transition-transform duration-300 group-hover:translate-y-0.5" size={13} />
-  </a>
-  
-  <a
-    href="#contact"
-    className="flex h-11 w-40 items-center justify-center rounded-xl border border-slate-800 bg-slate-900/60 text-sm font-semibold text-slate-300 backdrop-blur-sm transition-all hover:border-cyan-500/40 hover:text-white"
-  >
-    Contact Me
-  </a>
-</div>
+          <div className="mt-8 flex items-center justify-center gap-4 lg:justify-start">
+            <a
+              href="https://drive.google.com/uc?export=download&id=1Aneo4IGP4pW3q-ga9HFFj2QrhzCxDrIN"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex h-11 w-40 items-center justify-center gap-2 rounded-xl border border-cyan-400 bg-cyan-500 text-sm font-semibold text-slate-950 shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all duration-300 hover:border-cyan-500/30 hover:bg-slate-900 hover:text-white hover:shadow-md cursor-pointer"
+            >
+              <span>Download CV</span>
+              <FaDownload className="transition-transform duration-300 group-hover:translate-y-0.5" size={13} />
+            </a>
+            
+            <a
+              href="#contact"
+              className="flex h-11 w-40 items-center justify-center rounded-xl border border-slate-800 bg-slate-900/60 text-sm font-semibold text-slate-300 backdrop-blur-sm transition-all hover:border-cyan-500/40 hover:text-white"
+            >
+              Contact Me
+            </a>
+          </div>
         </motion.div>
 
       </div>
