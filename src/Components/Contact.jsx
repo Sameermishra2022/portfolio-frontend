@@ -133,7 +133,7 @@ const Contact = () => {
                   <div>
                     <span className="text-[11px] text-slate-500 block uppercase font-medium">Location</span>
                     <span className="text-sm font-semibold text-slate-200">
-                      Karnataka, Bangalore
+                      Bangalore, Karnataka
                     </span>
                   </div>
                 </div>
@@ -222,7 +222,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      placeholder="example@gmail.com"
+                      placeholder="Your Email"
                       className="w-full rounded-xl border border-slate-800 bg-slate-950/80 pl-10 pr-4 py-3 text-sm text-slate-100 placeholder-slate-600 outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all"
                     />
                   </div>
@@ -259,7 +259,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    placeholder="Tell me about your project requirements..."
+                    placeholder="Type your message here..."
                     className="w-full rounded-xl border border-slate-800 bg-slate-950/80 pl-10 pr-4 py-3 text-sm text-slate-100 placeholder-slate-600 outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all resize-none"
                   ></textarea>
                 </div>

@@ -7,7 +7,7 @@ const Hero = () => {
     <section id="home" className="relative flex min-h-screen items-center overflow-hidden px-6 pt-28 pb-12 text-white lg:px-10">
 
       {/* Dark Ambient Background Glows */}
-      <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-blue-600/10 blur-[120px]"></div>
+      <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-pink-600/10 blur-[120px]"></div>
 
       <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-8 lg:grid lg:grid-cols-2 lg:items-center">
 
@@ -35,23 +35,28 @@ const Hero = () => {
           className="relative mx-auto flex h-[310px] w-full max-w-xl items-center justify-center sm:h-[370px] lg:order-2 lg:h-[500px]"
         >
           {/* Inner Circle Soft Glow Effect */}
-          <div className="pointer-events-none absolute h-[240px] w-[240px] sm:h-[310px] sm:w-[310px] lg:h-[370px] lg:w-[370px] rounded-full bg-cyan-500/25 blur-3xl animate-pulse [animation-duration:4s]"></div>
+          <div className="pointer-events-none absolute h-[240px] w-[240px] sm:h-[310px] sm:w-[310px] lg:h-[370px] lg:w-[370px] rounded-full bg-pink-500/25 blur-3xl animate-pulse [animation-duration:4s]"></div>
 
           {/* Bahar Wala Outer Border (Original Cyan Ring - Unchanged) */}
           <div className="absolute h-[250px] w-[250px] sm:h-[320px] sm:w-[320px] lg:h-[385px] lg:w-[385px] animate-[spin_14s_linear_infinite] rounded-full border border-cyan-500/30 shadow-[0_0_20px_rgba(34,211,238,0.15)]"></div>
 
-          {/* Inner Border Frame (Rotating Green, Blue, Orange, Purple, Cyan Gradient) */}
-          <div className="relative h-[220px] w-[220px] sm:h-[290px] sm:w-[290px] lg:h-[350px] lg:w-[350px] rounded-full p-[3px] overflow-hidden shadow-2xl shadow-cyan-500/20">
+          {/* Inner Border Frame (Only Pink & Related Shades) */}
+          <div className="relative h-[220px] w-[220px] sm:h-[290px] sm:w-[290px] lg:h-[350px] lg:w-[350px] rounded-full p-[3px] overflow-hidden shadow-[0_0_35px_rgba(236,72,153,0.4)]">
             
-            {/* Continuous Rotating 5-Color Gradient Background */}
-            <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 via-blue-500 via-amber-500 via-purple-600 via-cyan-400 to-emerald-400 animate-[spin_6s_linear_infinite]"></div>
+            {/* Continuous Rotating Pink & Magenta Related Gradient Background */}
+            <div 
+              className="absolute inset-0 animate-[spin_4s_linear_infinite]"
+              style={{
+                backgroundImage: "linear-gradient(to right, #db2777, #ec4899, #f472b6, #fb7185, #e11d48, #db2777)"
+              }}
+            ></div>
             
             {/* Static Image Frame (Image rotated nahi hogi) */}
             <div className="absolute inset-[3px] rounded-full bg-slate-900 overflow-hidden p-1">
               <img
                 src={sameer}
                 alt="Sameer Mishra"
-                className="h-full w-full rounded-full object-cover object-[50%_38%] brightness-[0.95] contrast-[1.05]"
+                className="h-full w-full rounded-full object-cover object-[50%_38%] brightness-[0.98] contrast-[1.05]"
               />
             </div>
           </div>
